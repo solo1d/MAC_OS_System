@@ -1,4 +1,4 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [MAC使用笔记](README.md)
 
