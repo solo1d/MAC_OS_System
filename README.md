@@ -53,6 +53,60 @@ $ vm_stat
   最后一条信息是系统的平均负载量。分为三部分，分别代表过去1分钟、5分钟、15分钟系统的平均负载量。  
   负载量越低意味着你的系统性能越好。
 
+## 本地硬盘挂载和卸载命令
+
+```bash
+可用于对 卸载后的硬盘 进行重复挂载
+首先创建一个文件夹 , 用来挂载设备,  并且要知道硬盘在/dev 中的编号, 和硬盘的格式
+ 
+ 获取硬盘编号和分区号
+  $diskutil  list
+
+挂载的两种方式    
+$diskutil mount disk3s1
+    编号是 disk3s1  ,会自动挂载到  /Volumes  目录下,并且自动创建一个和硬盘分区名相同的目录.
+    
+$sudo mount -t apfs  /dev/disk3s1   /mnt/vm
+    挂载一个 格式为 apfs 的硬盘, 编号是 disk3 ,  s1是第二个已初始化分区, vm是被挂载的目录(自定义)
+
+卸载的三种形式
+$diskutil umount disk3s1
+$diskutil umount vm            #指定挂载卸载目录也可以进行卸载
+
+$sudo umount -f /mnt/vm
+```
+
+## 远程硬盘挂载和卸载命令
+
+```bash
+需要使用  sshfs命令来进行挂载.
+  首先安装 sshfs 和 运行环境 osxfuse (期间需要输入root密码)
+    $brew cask install  osxfuse
+    $brew install sshfs
+  随后 刷新或重启 终端 (我使用的 ohmyzsh, 如果是bash 那么文件会更改 ~/.bash_profile)
+    $source ~/.zshrc 
+  
+使用命令  sshfs进行远程硬盘挂载
+  $sshfs -C -o reconnect pi@192.168.0.122:/home/pi  /Users/ns/vm
+    前面目录是 远程目录,  后面是挂载到的本地目录位置
+  
+进行卸载的两种方法
+  $umount Users/ns/vm
+  $diskutil umount Users/ns/vm
+```
+
+## 刷新终端,重新读取配置文件
+
+```bash
+oh my zsh 终端格式
+    $source ~/.zshrc
+
+bash 终端格式
+    $source ~/.bash_profile
+```
+
+
+
 ## 常用命令列表
 
 ```bash
