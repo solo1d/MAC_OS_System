@@ -3,6 +3,7 @@
 * [MAC使用笔记](README.md)
 * [Homebrew  软件包管理器 \(必装\)](homebrew-ruan-jian-bao-guan-li-qi-bi-zhuang.md)
 * [oh my zsh 个性化终端\(必装\)](oh-my-zsh-ge-xing-hua-zhong-duan-bi-zhuang.md)
+* [Mac ssh免密码登陆linux服务器](mac-ssh-mian-mi-ma-deng-lu-linux-fu-wu-qi.md)
 * [apache2](apache2.md)
 * [v2ray](v2ray.md)
 * [scp 服务器文件上传和下载命令](scp-fu-wu-qi-wen-jian-shang-chuan-he-xia-zai-ming-ling.md)
