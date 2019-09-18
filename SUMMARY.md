@@ -15,4 +15,5 @@
 * [app已损坏解决方案](app-yi-sun-huai-jie-jue-fang-an.md)
 * [gcc 编译缺少 &lt;\_stdio.h&gt; 文件解决方案](gcc-bian-yi-que-shao-stdio.h-wen-jian-jie-jue-fang-an.md)
 * [Xcode\_头文件\_静动态库\_编译输出位置](xcode-tou-wen-jian-jing-dong-tai-ku-bian-yi-shu-chu-wei-zhi.md)
+* [MAC safari 无法访问 127.0.0.1 解决方案](mac-safari-wu-fa-fang-wen-127.0.0.1-jie-jue-fang-an.md)
 
