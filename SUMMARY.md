@@ -1,6 +1,7 @@
 # Table of contents
 
 * [MAC使用笔记](README.md)
+* [硬盘初始化和镜像写入命令](ying-pan-chu-shi-hua-he-jing-xiang-xie-ru-ming-ling.md)
 * [Homebrew  软件包管理器 \(必装\)](homebrew-ruan-jian-bao-guan-li-qi-bi-zhuang.md)
 * [oh my zsh 个性化终端\(必装\)](oh-my-zsh-ge-xing-hua-zhong-duan-bi-zhuang.md)
 * [Mac ssh免密码登陆linux服务器](mac-ssh-mian-mi-ma-deng-lu-linux-fu-wu-qi.md)
