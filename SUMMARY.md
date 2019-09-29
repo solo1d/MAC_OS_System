@@ -1,6 +1,7 @@
 # Table of contents
 
 * [MAC使用笔记](README.md)
+* [MAC查看当前处理器信息](mac-cha-kan-dang-qian-chu-li-qi-xin-xi.md)
 * [Homebrew  软件包管理器 \(必装\)](homebrew-ruan-jian-bao-guan-li-qi-bi-zhuang.md)
 * [oh my zsh 个性化终端\(必装\)](oh-my-zsh-ge-xing-hua-zhong-duan-bi-zhuang.md)
 * [Mac ssh免密码登陆linux服务器](mac-ssh-mian-mi-ma-deng-lu-linux-fu-wu-qi.md)
