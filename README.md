@@ -69,6 +69,9 @@ $diskutil mount disk3s1
 $sudo mount -t apfs  /dev/disk3s1   /mnt/vm
     挂载一个 格式为 apfs 的硬盘, 编号是 disk3 ,  s1是第二个已初始化分区, vm是被挂载的目录(自定义)
 
+$diskutil apfs unlockVolume disk3s1
+    挂载一个已经加密的 apfs格式的硬盘, 该命令执行后会要求输出密码.
+
 卸载的三种形式
 $diskutil umount disk3s1
 $diskutil umount vm            #指定挂载卸载目录也可以进行卸载
