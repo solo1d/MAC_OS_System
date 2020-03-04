@@ -8,7 +8,7 @@
 $  which  程序名字
 ```
 
-### 内存查看命令
+### 内存查看命令:
 
 #### python脚本命令
 
@@ -29,6 +29,21 @@ $ vm_stat
     #            MemFree = ( 剩余页数  + 不活动的页数)* 内存页大小  /1024 /1024/1024
     #                得到的单位是 GB
 ```
+
+
+
+## 查看端口占用
+
+```bash
+netstat -anvp udp           #查看UDP端口占用和PID 等信息
+netstat -ap TCP             #精简型, 但是查看的是 TCP
+
+netstat -anvf inet         #UDP和TCP 的信息都会输出.
+```
+
+
+
+
 
 ### 查看系统运行时间 uptime
 
