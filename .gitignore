@@ -1,0 +1,2 @@
+#忽略MACOS下的 .DS_Store 文件
+/**/.DS_Store
