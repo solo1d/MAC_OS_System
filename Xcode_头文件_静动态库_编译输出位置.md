@@ -12,6 +12,14 @@
 
 ![](assets/head.png)
 
+3.添加头文件依次找到 
+Header Search Paths: 添加#include <>的路径 
+User Header Search Paths: 添加#include “”路径
+
+
+
+
+
 ## 添加动态库和静态库文件
 
 `项目设置 -> TARGETS -> 生成应用名称 -> General -> Linked Frameworks and Libraries`  
@@ -25,6 +33,10 @@
 **\( 在选项内添加 动态库 所在的路径, 已有的内容不要删 \)**
 
 ![](assets/run.png)
+
+4.添加库文件 
+Library Search Paths: 添加库所在目录 
+Other Linker Flags: 比如要链接的库是libboost_regex.a,那么此处应该添加-lboost_regex即可。
 
 ## 编译输出位置
 
