@@ -101,8 +101,11 @@ $sudo umount -f /mnt/vm
 ```bash
 需要使用  sshfs命令来进行挂载.
   首先安装 sshfs 和 运行环境 osxfuse (期间需要输入root密码)
-    $brew cask install  osxfuse
-    $brew install sshfs
+  	需要去官网下载两个安装包  sshfs-2.5.0.pkg 和 macfuse-4.2.4.dmg
+  		官网: https://osxfuse.github.io
+#    $brew install macFUSE          #已被屏蔽, 废弃
+#    $brew cask install  osxfuse    #已被屏蔽, 废弃
+#    $brew install sshfs   #已被屏蔽, 废弃
   随后 刷新或重启 终端 (我使用的 ohmyzsh, 如果是bash 那么文件会更改 ~/.bash_profile)
     $source ~/.zshrc 
   
@@ -111,8 +114,8 @@ $sudo umount -f /mnt/vm
     前面目录是 远程目录,  后面是挂载到的本地目录位置
   
 进行卸载的两种方法
-  $umount Users/ns/vm
-  $diskutil umount Users/ns/vm
+  $umount/ Users/ns/vm
+  $diskutil umount force /Users/ns/vm
 ```
 
 ## 刷新终端,重新读取配置文件
