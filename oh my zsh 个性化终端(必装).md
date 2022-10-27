@@ -157,8 +157,9 @@ export ZSH="~/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="crcandy"
+#ZSH_THEME="crcandy"
 #ZSH_THEME="candy"
+ZSH_THEME="nicoulaj"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
