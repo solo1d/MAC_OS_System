@@ -14,11 +14,11 @@ gem install iStats
 
 使用简单，终端直接运行 `istats` 即可。
 
-![iStats in iTerm2](https://placeless.net/files/2017/09/02/istats.png)
+![iStats in iTerm2](assets/istats.png)
 
 终端不常驻的话，还可以写一个简单的 Alfred Workflow，通过 Alfred 即时查看。
 
-![iStats in Alfred](https://placeless.net/files/2017/09/02/istats_in_alfred.png)
+![iStats in Alfred](assets/istats_in_alfred.png)
 
 新建一个无需参数的 Workflow（Script Filter），语言为 Bash，脚本如下。这里只是 grep 出了 CPU 和电池两项，拆分输出成两行（如上图）。
 
