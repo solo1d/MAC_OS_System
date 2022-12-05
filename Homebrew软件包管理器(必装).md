@@ -71,3 +71,14 @@ gradle -v
 
 
 
+## 删除下载缓存
+
+```bash
+# 执行如下两个命令:
+$ brew autoremove
+$ brew cleanup   
+
+# 删除如下路径的文件夹内容，全部删除即可
+$ rm -fr ${HOME}/Library/Caches/Homebrew
+```
+
