@@ -56,8 +56,8 @@ mac route命令同时访问内外网
 
 # 删除默认路由: （可以不做该步骤）
 sudo route delete 0.0.0.0
-# 外网添加默认路由走无线网卡, 无线网卡的网关是 192.168.0.1:   （可以不做该步骤）
-sudo route add 0.0.0.0 192.168.0.1  -interface en0
+# 外网添加默认路由, 无线网卡的网关是 192.168.0.1:   （可以不做该步骤）
+sudo route -n add  -net 0.0.0.0 192.168.0.1  
 # 内网添加USB路由:  访问 16.16.20.0 网段。  通过50.7.21.254 网关进行访问
 sudo route -n add -net 16.16.20.0 -netmask 255.255.255.0 -gateway 50.7.21.254  -interface en6
 		# 可简写为： sudo route -n add -net 16.16.20.0/24 50.7.21.254 -interface en6
