@@ -163,11 +163,11 @@ FTP的命令行格式为：ftp -v -d -i -n -g [主机IP或者主机名]，其中
 
 　　26.lcd[dir]：将本地工作目录切换至dir。 
 
-　　27.ls[remote-dir][local-file]：显示远程目录remote-dir，并存入本地文件local-file。 
+　　27.ls  remote-dir  local-file  ：显示远程目录remote-dir，并存入本地文件local-file。 
 
 　　28.macdef macro-name：定义一个宏，遇到macdef下的空行时，宏定义结束。 
 
-　　29.mdelete[remote-file]：删除远程主机文件。 
+　　29.mdelete [remote-file]：删除远程主机文件。 
 
 　　30.mdir remote-files local-file：与dir类似，但可指定多个远程文件，如：mdir *.o.*.zipoutfile 
 
@@ -185,7 +185,7 @@ FTP的命令行格式为：ftp -v -d -i -n -g [主机IP或者主机名]，其中
 
 　　37.newer file-name：如果远程机中file-name的修改时间比本地硬盘同名文件的时间更近，则重传该文件。 
 
-　　38.nlist[remote-dir][local-file]：显示远程主机目录的文件清单，并存入本地硬盘的local-file。 
+==**38.nlist  remote-dir local-file：显示远程主机目录的文件清单，并存入本地硬盘的local-file。**==
 
 　　39.nmap[inpattern outpattern]：设置文件名映射机制，使得文件传输时，文件中的某些字符相互转换，如：nmap $1.$2.$3[$1，$2].[$2，$3]，则传输文件a1.a2.a3时，文件名变为a1，a2。该命令特别适用于远程主机为非UNIX机的情况。 
 
