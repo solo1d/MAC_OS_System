@@ -2,6 +2,20 @@
 
 
 
+### 如何关闭Wi-Fi
+
+```bash
+networksetup -setairportpower en0 off1
+```
+
+### 如何启动Wi-Fi
+
+```bash
+networksetup -setairportpower en0 on1
+```
+
+
+
 
 
 | 旗标                                                         | 描述                                                         |
