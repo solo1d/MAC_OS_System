@@ -137,7 +137,7 @@ FTP的命令行格式为：ftp -v -d -i -n -g [主机IP或者主机名]，其中
 | 21   | `glob`                              | 设置mdelete，mget，mput的文件名扩展，缺省时不扩展文件名，同命令行的-g参数。 |
 | 22   | `hash`                              | 每传输1024字节，显示一个hash符号(#)。                        |
 | 23   | `help[cmd]：`                       | 显示ftp内部命令cmd的帮助信息，如：help get。                 |
-| 24   | `idle[seconds]`                     | ：将远程服务器的休眠计时器设为[seconds]秒。                  |
+| 24   | `idle[seconds]`                     | 将远程服务器的休眠计时器设为[seconds]秒。                  |
 | 25   | `image：`                           | 设置二进制传输方式(同binary)。                               |
 | 26   | `lcd[dir]：`                        | **将本地工作目录切换至dir。**                                |
 | 27   | `ls[remote-dir][local-file]：`      | 显示远程目录remote-dir， 并存入本地文件local-file。          |
