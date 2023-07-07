@@ -261,5 +261,31 @@ $ sudo lsof -nP -iTCP -sTCP:LISTEN
 
 #查看某个进程打开的文件句柄
 $ sudo lsof -i -n -p 27691
+
+$lsof  [-aUu] [+d]
+选项与参数
+-a  :多项数据需要 "同时成立" 才显示出结果时.
+-U  :仅列出 Unix like 系统的 socket套接字 文件类型
+-u  :后接username ,列出该使用者相关程序所打开的文件
++d  :后面接目录, 亦找出某个目录下面已经被打开的文件
+
+范例: 列出目前系统上面所有已经被打开的文件与设备
+$lsof       #数据太多了 , 不展示了
+
+
+范例:仅列出关于 root 的所有程序打开的 socket 文件
+$lsof  -u root -a -U
+COMMAND     PID USER   FD   TYPE             DEVICE SIZE/OFF   NODE NAME
+systemd       1 root   13u  unix 0xffffffccbb0a0000      0t0   9223 /run/systemd/notify type=DGRAM
+systemd       1 root   14u  unix 0xffffffccbb0a0480      0t0   9224 /run/systemd/cgroups-agent type=DGRAM
+systemd       1 root   15u  unix 0xffffffccbb0a0900      0t0   9225 type=DGRAM
+
+
+范例: 列出目前系统上面所有的被启动的周边设备
+$lsof +d /dev 
+
+
+范例:找出属于 root 的bash 这个进程所打开的文件
+$lsof -u root | grep 'bash'
 ```
 
